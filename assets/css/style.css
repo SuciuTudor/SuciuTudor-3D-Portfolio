@@ -36,7 +36,7 @@ body {
 .folders-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px 20px;
+  gap: 20px 20px;
   justify-items: center;
   margin-bottom: 40px;
 }
