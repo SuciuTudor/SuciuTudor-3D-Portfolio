@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>APARTMENT B</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Proxima Nova Thin', sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      max-width: 90%;
+      margin: 10px 0;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    .back-btn {
+      margin: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a class="back-btn" href="../index.html">← Back to Main</a>
+  <div class="gallery">
+    
+      <img src="APARTMENT_B_PERSP_1.jpg" alt="APARTMENT B image" onclick="openFullscreen(this)" />
+    
+      <img src="APARTMENT_B_PERSP_2.jpg" alt="APARTMENT B image" onclick="openFullscreen(this)" />
+    
+      <img src="APARTMENT_B_PERSP_3.jpg" alt="APARTMENT B image" onclick="openFullscreen(this)" />
+    
+      <img src="APARTMENT_B_PERSP_4.jpg" alt="APARTMENT B image" onclick="openFullscreen(this)" />
+    
+      <img src="APARTMENT_B_PERSP_5.jpg" alt="APARTMENT B image" onclick="openFullscreen(this)" />
+    
+      <img src="APARTMENT_B_PERSP_6.jpg" alt="APARTMENT B image" onclick="openFullscreen(this)" />
+    
+      <img src="APARTMENT_B_PERSP_7.jpg" alt="APARTMENT B image" onclick="openFullscreen(this)" />
+    
+      <img src="APARTMENT_B_PERSP_8.jpg" alt="APARTMENT B image" onclick="openFullscreen(this)" />
+    
+  </div>
+  <script>
+    function openFullscreen(img) {
+      if (img.requestFullscreen) {
+        img.requestFullscreen();
+      } else if (img.webkitRequestFullscreen) {
+        img.webkitRequestFullscreen();
+      } else if (img.msRequestFullscreen) {
+        img.msRequestFullscreen();
+      }
+    }
+  </script>
+</body>
+</html>
